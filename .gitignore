@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+/.idea/
+/part00-common/target/
+/part01-lambda/target/
