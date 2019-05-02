@@ -1,6 +1,5 @@
 import pymongo
 from logger.log import storage
-from motor.motor_asyncio import AsyncIOMotorClient
 
 # 数据库基本信息
 db_configs = {
