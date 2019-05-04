@@ -1,9 +1,11 @@
 import subprocess
 import os
+import sys
 
 if __name__ == '__main__':
+    interpreter = sys.executable
     servers = [
-        ["python","infoq_seed_spider.py"],
+        [f"{interpreter}","infoq_seed_spider.py"],
     ]
     procs = []
     for server in servers:
@@ -13,4 +15,4 @@ if __name__ == '__main__':
         proc.wait()
         if proc.poll():
             exit(0)
-    os.system("python infoq_details_spider.py")
+    os.system(f"{interpreter} infoq_details_spider.py")
